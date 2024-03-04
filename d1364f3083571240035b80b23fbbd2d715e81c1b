@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f208644b_0865a6bb",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 17062
+      },
+      "writtenOn": "2024-03-04T07:44:26Z",
+      "side": 1,
+      "message": "seems like here in these extracted dts engineers at oplus made a mistake of calling oneplus -\u003e onepluse, Should that harmless spelling error be fixed?, this appears at multiple places. I can compile after running a sed query to test if required.",
+      "revId": "d1364f3083571240035b80b23fbbd2d715e81c1b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
