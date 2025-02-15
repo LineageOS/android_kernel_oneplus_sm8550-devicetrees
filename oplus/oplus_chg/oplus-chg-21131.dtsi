@@ -28,10 +28,11 @@
 };
 
 &pm8550b_haptics {
-	qcom,vmax-mv = <1400>;
+	qcom,vmax-mv = <1200>;
 	qcom,cl-vmax-mv = <1680>;
 	qcom,lra-period-us = <5882>;
 	qcom,fifo-vmax-mv = <7300>;
+	qcom,richtap-fifo-vmax-mv = <6300>;
 	qcom,old-steady-vmax-mv = <7300>;
 	qcom,brake-mode = <BRAKE_OPEN_LOOP>;
 	qcom,cal-data-restore;
@@ -393,6 +394,11 @@
 	oplus,subboard_ntc_abnormal_current = <7300>;
 	oplus,subboard_ntc_abnormal_high_temp = <1000>;
 	oplus,subboard_abnormal_method_support;
+
+	oplus,poweroff_high_batt_temp = <720>;
+	oplus,poweroff_emergency_batt_temp = <770>;
+	oplus,usbtemp_batt_temp_over_hot = <60>;
+	oplus,usbtemp_temp_gap_with_batt_temp_in_over_hot = <15>;
 
 	qcom,vbatt_power_off = <3300>;
 	qcom,vbatt_soc_1 = <3310>;
