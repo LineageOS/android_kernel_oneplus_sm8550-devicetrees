@@ -646,6 +646,7 @@
 		size = <0x0 0x1400000>;
 	};
 
+/* #ifdef OPLUS_BUG_STABILITY */
 	qmc_dma_mem: qmc_dma_region {
 		compatible = "shared-dma-pool";
 		alloc-ranges = <0x0 0x00000000 0x0 0xffffffff>;
@@ -654,7 +655,6 @@
 		size = <0x0 0x1000000>;
 	};
 
-/* #ifdef OPLUS_BUG_STABILITY */
 	ramoops_mem: ramoops_region {
 		compatible = "ramoops";
 		alloc-ranges = <0x0 0x00000000 0xffffffff 0xffffffff>;
@@ -723,7 +723,6 @@
 		explorer,data-drive-strength = <4>;
 		explorer,spmi-drive-strength = <7>;
 	  };
-
 	disp_rdump_region@b8000000 {
 	};
 
