@@ -526,6 +526,11 @@
 		pm7550_l14: regulator-pm7550-l14 {
 			regulator-name = "pm7550_l14";
 			qcom,set = <RPMH_REGULATOR_SET_ALL>;
+			// #ifdef OPLUS_FEATURE_UFF_FINGERPRINT
+			regulator-min-microvolt = <3080000>;
+			regulator-max-microvolt = <3080000>;
+			qcom,init-voltage = <3080000>;
+			//#endif /*OPLUS_FEATURE_UFF_FINGERPRINT*/
 			qcom,init-mode = <RPMH_REGULATOR_MODE_HPM>;
 		};
 	};
