@@ -591,6 +591,11 @@
 	qcom,usbtemp_cool_down_recover_gap_low = <6>;
 	qcom,usbtemp_cool_down_recover_gap_high = <15>;
 
+	oplus,poweroff_high_batt_temp = <720>;
+	oplus,poweroff_emergency_batt_temp = <770>;
+	oplus,usbtemp_batt_temp_over_hot = <60>;
+	oplus,usbtemp_temp_gap_with_batt_temp_in_over_hot = <15>;
+
 	qcom,vbatt_power_off = <3300>;
 	qcom,vbatt_soc_1 = <3410>;
 	qcom,vooc_project = <13>;
@@ -686,6 +691,13 @@
 
 	oplus,uart_tx-gpio = <&tlmm 26 0x00>;
 	oplus,uart_rx-gpio = <&tlmm 27 0x00>;
+
+	oplus,protocol_list = <CHG_PROTOCOL_PD 18
+				CHG_PROTOCOL_QC 18
+				CHG_PROTOCOL_VOOC 67>;
+	oplus,default_protocol_list = <CHG_PROTOCOL_PD
+					CHG_PROTOCOL_QC
+					CHG_PROTOCOL_VOOC>;
 };
 
 &tlmm {

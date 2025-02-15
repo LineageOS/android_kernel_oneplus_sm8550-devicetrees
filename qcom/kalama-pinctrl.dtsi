@@ -1127,6 +1127,9 @@
 				pins = "gpio48";
 				drive-strength = <2>;
 				bias-pull-up;
+//#ifdef OPLUS_ARCH_EXTENDS
+				qcom,i2c_pull;
+//#endif /* OPLUS_ARCH_EXTENDS */
 			};
 		};
 
@@ -1140,6 +1143,9 @@
 				pins = "gpio49";
 				drive-strength = <2>;
 				bias-pull-up;
+//#ifdef OPLUS_ARCH_EXTENDS
+				qcom,i2c_pull;
+//#endif /* OPLUS_ARCH_EXTENDS */
 			};
 		};
 
