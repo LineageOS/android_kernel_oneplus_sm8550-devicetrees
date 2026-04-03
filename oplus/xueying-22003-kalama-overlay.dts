@@ -107,7 +107,7 @@
     interrupt-parent = <&tlmm>;
     bsp_irq_gpio = <&tlmm 171 0>;
     bsp_int1_gpio = <&tlmm 172 0>;
-    bsp_int2_gpio = <&tlmm 88 0>;
+    bsp_int2_gpio = <&tlmm 137 0>;
     explorer_sleep_gpio = <&tlmm 144 0>;
     pmic_pon_gpio = <&tlmm 116 0>;
     pmic_reset_gpio = <&tlmm 125 0>;
